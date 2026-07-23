@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { usePortfolioEffects } from './usePortfolioEffects';
 import {
   stats,
@@ -351,6 +352,7 @@ function App() {
 
       <ResumeModal open={resumeOpen} onClose={closeResume} />
       <Footer />
+      <Analytics />
     </div>
   );
 }
